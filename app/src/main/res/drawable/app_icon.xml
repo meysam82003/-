@@ -1,1 +1,18 @@
-The requested file reference is not currently visible. Use files.search or files.list to rediscover the file, then retry with a returned ref_id or file_id.
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="128dp"
+    android:height="128dp"
+    android:viewportWidth="128"
+    android:viewportHeight="128">
+    <path android:fillColor="#071121" android:pathData="M24,4h80c11,0 20,9 20,20v80c0,11 -9,20 -20,20H24c-11,0 -20,-9 -20,-20V24C4,13 13,4 24,4z"/>
+    <path android:fillColor="#10284A" android:pathData="M24,10h80c7.7,0 14,6.3 14,14v80c0,7.7 -6.3,14 -14,14H24c-7.7,0 -14,-6.3 -14,-14V24c0,-7.7 6.3,-14 14,-14z"/>
+    <path android:strokeColor="#41EFFF" android:strokeWidth="3" android:fillColor="#00000000" android:pathData="M24,10h80c7.7,0 14,6.3 14,14v80c0,7.7 -6.3,14 -14,14H24c-7.7,0 -14,-6.3 -14,-14V24c0,-7.7 6.3,-14 14,-14z"/>
+    <path android:strokeColor="#163F71" android:strokeWidth="4" android:fillColor="#00000000" android:pathData="M64,27a29,29 0,1 1,0 58a29,29 0,1 1,0 -58z"/>
+    <path android:strokeColor="#2BCEFF" android:strokeWidth="4" android:fillColor="#00000000" android:pathData="M64,31a25,25 0,1 1,0 50a25,25 0,1 1,0 -50z"/>
+    <path android:fillColor="#58F4F4" android:pathData="M64,19 53,31h22z"/>
+    <path android:fillColor="#58F4F4" android:pathData="M64,109 53,97h22z"/>
+    <path android:fillColor="#58F4F4" android:pathData="M19,64 31,53v22z"/>
+    <path android:fillColor="#58F4F4" android:pathData="M109,64 97,53v22z"/>
+    <path android:fillColor="#FFFFFF" android:strokeColor="#19314F" android:strokeWidth="4" android:strokeLineJoin="round" android:pathData="M50,39v54l14,-13 12,23 10,-5 -10,-20h18z"/>
+    <path android:strokeColor="#45EFFF" android:strokeWidth="2.5" android:strokeLineJoin="round" android:fillColor="#00000000" android:pathData="M50,39v54l14,-13 12,23 10,-5 -10,-20h18z"/>
+</vector>
