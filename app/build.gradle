@@ -2,6 +2,8 @@ plugins {
     id 'com.android.application'
 }
 
+def tvReleaseKeystore = System.getenv('TV_CURSOR_KEYSTORE_PATH')
+
 android {
     namespace 'io.github.meysam82003.tvcursor'
     compileSdk 35
@@ -10,8 +12,8 @@ android {
         applicationId 'io.github.meysam82003.tvcursor'
         minSdk 28
         targetSdk 35
-        versionCode 4
-        versionName '1.3.0'
+        versionCode 5
+        versionName '1.4.0'
     }
 
     compileOptions {
@@ -19,8 +21,22 @@ android {
         targetCompatibility JavaVersion.VERSION_17
     }
 
+    signingConfigs {
+        tvProduction {
+            if (tvReleaseKeystore) {
+                storeFile file(tvReleaseKeystore)
+                storePassword System.getenv('TV_CURSOR_KEYSTORE_PASSWORD')
+                keyAlias System.getenv('TV_CURSOR_KEY_ALIAS')
+                keyPassword System.getenv('TV_CURSOR_KEY_PASSWORD')
+            }
+        }
+    }
+
     buildTypes {
         release {
+            // Without owner's signing secrets, provide an installable PREVIEW
+            // build with Android's debug signing key. Never use it in stores.
+            signingConfig = tvReleaseKeystore ? signingConfigs.tvProduction : signingConfigs.debug
             minifyEnabled false
         }
     }

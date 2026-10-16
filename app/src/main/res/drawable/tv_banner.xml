@@ -1,8 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="320dp" android:height="180dp" android:viewportWidth="320" android:viewportHeight="180">
-  <path android:fillColor="#071625" android:pathData="M0,0 L320,0 L320,180 L0,180 Z" />
-  <path android:strokeColor="#1E72A4" android:strokeWidth="3" android:fillColor="#132842" android:pathData="M74,20 L246,20 Q276,20 276,50 L276,130 Q276,160 246,160 L74,160 Q44,160 44,130 L44,50 Q44,20 74,20 Z" />
-  <path android:strokeColor="#2EDCFA" android:strokeWidth="5" android:fillColor="#00000000" android:pathData="M160,47 A43,43 0,1 1,160 133 A43,43 0,1 1,160 47 Z" />
-  <path android:fillColor="#56EDE2" android:pathData="M160,35 L149,49 L171,49 Z M160,145 L149,131 L171,131 Z M105,90 L119,79 L119,101 Z M215,90 L201,79 L201,101 Z" />
-  <path android:strokeColor="#081E35" android:strokeWidth="5" android:strokeLineJoin="round" android:fillColor="#FFFFFF" android:pathData="M142,57 L142,120 L161,102 L175,128 L188,121 L175,98 L198,98 Z" />
-</vector>
+The requested file reference is not currently visible. Use files.search or files.list to rediscover the file, then retry with a returned ref_id or file_id.

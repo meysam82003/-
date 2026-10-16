@@ -4,6 +4,12 @@
 
 A privacy-first, open-source **remote-controlled mouse for Android TV 9 (API 28) and newer, Google TV, and compatible Fire OS**. No root, no Wi-Fi, no account, no ad SDK, no network permission.
 
+## نسخه ۱.۴.۰ — طراحی نئونی لوکس
+
+ظاهر داشبورد در نسخه ۱.۴.۰ شامل لوگوی جدید، هدر انگلیسی خوانا (بدون شکست به حروف جداگانه)، کارت‌های سرمه‌ای با حاشیه فیروزه‌ای، دکمه اصلی روشن/خاموش و کنترل‌های بزرگ مخصوص تلویزیون است.
+
+**دریافت نسخه GitHub:** پس از موفقیت GitHub Actions، APK از صفحه [Releases](https://github.com/meysam82003/-/releases/tag/v1.4.0) قابل دریافت است. اگر امضای تولید در Secrets تنظیم نشده باشد، این نسخه **پیش‌انتشار آزمایشی با امضای Debug** است، نه نسخه مارکتی و بلندمدت.
+
 ## راهنمای فارسی
 
 این اپ برای **تلویزیون‌های Android TV نسخه ۹ به بالا / Google TV** ساخته شده است، مستقل از برند سازنده: TCL، Sony، Xiaomi، Philips، Hisense و غیره، *در صورتی که سیستم‌عامل و دسترس‌پذیری دستگاه سازگار باشند*. روی **Samsung Tizen / LG webOS / Roku TV** قابل نصب نیست.
@@ -62,8 +68,9 @@ A privacy-first, open-source **remote-controlled mouse for Android TV 9 (API 28)
 
 - Android Studio: پروژه را Open کنید؛ Build > Build APK(s).
 - Gradle CLI: JDK 17 + Android SDK API 35 + Gradle 8.13، سپس `gradle assembleDebug`.
-- GitHub: همه فایل‌های پروژه را در ریشه مخزن خود قرار دهید. در تب **Actions → Android APK → Run workflow** بیلد را اجرا و `TV-Remote-Cursor-v1-debug` را از Artifacts دانلود کنید.
-- نسخه Debug برای تست است، نه انتشار رسمی مارکت. برای انتشار نهایی نسخه Release را با کلید شخصی خودتان امضا کنید؛ هیچ کلید امضایی در مخزن قرار ندهید.
+- GitHub: همه فایل‌های پروژه را در ریشه مخزن خود قرار دهید. در تب **Actions → Android APK → Run workflow** بیلد را اجرا و `TV-Remote-Cursor-v1.4.0-release-apk` را از Artifacts دانلود کنید.
+- فایل `assembleRelease` بدون Secrets توسط امضای Debug امضا می‌شود تا **قابل نصب آزمایشی** باشد؛ این خروجی **release-production نیست** و کلید آن ممکن است در هر اجرای GitHub Actions تغییر کند. برای انتشار رسمی، `TV_CURSOR_KEYSTORE_BASE64`، `TV_CURSOR_KEY_ALIAS`، `TV_CURSOR_KEYSTORE_PASSWORD` و `TV_CURSOR_KEY_PASSWORD` را در Repository Secrets تنظیم کنید؛ هرگز keystore یا گذرواژه را در مخزن قرار ندهید.
+- به‌دلیل تفاوت احتمالی امضای Debug در Runnerهای GitHub، به‌روزرسانی نسخهٔ قبلی ممکن است با خطای signature mismatch مواجه شود. در این صورت حذف و نصب مجدد لازم است و تنظیمات قبلی پاک می‌شود.
 
 ## English
 
