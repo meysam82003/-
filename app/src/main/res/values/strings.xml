@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TV Remote Cursor</string>
+    <string name="service_name">TV Remote Cursor — موس تلویزیون</string>
+    <string name="service_description">با اجازه شما، چهار دکمه جهت‌دار ریموت و OK را برای حرکت نشانگر و کلیک استفاده می‌کند. متن، تصویر یا اطلاعات شخصی را ثبت یا ارسال نمی‌کند. با خاموش‌کردن موس، ریموت به حالت معمول برمی‌گردد.</string>
+</resources>
